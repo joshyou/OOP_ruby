@@ -50,16 +50,17 @@ class Board
 end
 
 class Player
+    
   attr_accessor :name, :marker
     
   def initialize(name, marker)
     @name = name
     @marker = marker
   end
-    
 end
 
 class Game
+    
   def initialize
     @game_board = Board.new
     @player_one = Player.new("Player 1", "X")
